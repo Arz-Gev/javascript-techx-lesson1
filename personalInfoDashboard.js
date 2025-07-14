@@ -1,4 +1,4 @@
-//THE TASK
+// THE TASK
 
 // firstName: string — your first name
 // lastName: string — your last name
@@ -9,7 +9,7 @@
 // contact: object with keys email, phone, city
 
 
-//MY SOLUTION
+// MY SOLUTION
 
 const firstName = "Gevorg";
 const lastName = "Arzakanyan";
@@ -23,14 +23,14 @@ let contact = { email: "gevorg@gmail.com", phone: "+374 33 33 33", city: "Erevan
 
 
 
-//THE TASK
+// THE TASK
 
-//Log the following sentences
+// Log the following sentences
 // “Hi, my name is {firstName} {lastName}. I live in {city}.”
 // “I am {currentYear - birthYear} years old and currently {isStudent ? "a student" : "not a student"}.”
 
 
-//MY SOLUTION
+// MY SOLUTION
 
 console.log(`Hi, my name is ${firstName} ${lastName}. I live in ${contact.city}`);
 console.log(`I am ${currentYear - birthYear} years old and currently ${isStudent ? "a student" : "not a student"}.`);
@@ -40,7 +40,7 @@ console.log(`I am ${currentYear - birthYear} years old and currently ${isStudent
 
 
 
-//THE TASK
+// THE TASK
 
 // Type Coercion & Comparison
 // Add two variables:
@@ -50,7 +50,7 @@ console.log(`I am ${currentYear - birthYear} years old and currently ${isStudent
 // Log the data types of both variables.
 
 
-//MY SOLUTION
+// MY SOLUTION
 
 let ageString = "25";
 
@@ -64,7 +64,7 @@ console.log(ageNumber === ageString)
 
 
 
-//THE TASK
+// THE TASK
 
 // Create a variable score (number between 0 and 100).
 // Write an if...else if...else block to print:
@@ -74,32 +74,29 @@ console.log(ageNumber === ageString)
 // D: 60-69
 // F: below 6
 
-//MY SOLUTION
+// MY SOLUTION
 
-const num = 74;
+const num = 74;   
 
-if (num >= 90) {
+if (num >= 90) {      //simple if else cascade
     console.log(num);
-}
-else if (num >= 80) {
+} else if (num >= 80) {
     console.log(num);
-}
-else if (num >= 70) {
+} else if (num >= 70) {
     console.log(num);
-}
-else if (num >= 60) {
+} else if (num >= 60) {
     console.log(num);
-}
-else if (num < 6) {
+} else if (num < 6) {
     console.log(num);
 }
 
 
 
 
-//THE TASK
 
-//Use a switch statement to print a message based on the grade:
+// THE TASK
+
+// Use a switch statement to print a message based on the grade:
 // A → “Excellent work!”
 // B → “Good job!”
 // C → “Keep improving.”
@@ -113,12 +110,12 @@ else if (num < 6) {
 
 
 
-//MY SOLUTION
+// MY SOLUTION
 
 
 let grade = "A"
 
-switch (grade){
+switch (grade) {
     case "A":
         console.log("Excellent work!");
         break;
@@ -134,6 +131,7 @@ switch (grade){
     case "F":
         console.log("Needs serious effort.");
 }
+
 
 
 
