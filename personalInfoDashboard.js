@@ -8,7 +8,6 @@
 // hobbies: array of at least 3 strings
 // contact: object with keys email, phone, city
 
-
 // MY SOLUTION
 
 const firstName = "Gevorg";
@@ -17,11 +16,12 @@ const birthYear = 2002;
 
 let currentYear = 2025;
 let isStudent = true;
-let hobbies = ["history", "visual art", "struggling"]
-let contact = { email: "gevorg@gmail.com", phone: "+374 33 33 33", city: "Erevan" };
-
-
-
+let hobbies = ["history", "visual art", "struggling"];
+let contact = {
+  email: "gevorg@gmail.com",
+  phone: "+374 33 33 33",
+  city: "Erevan",
+};
 
 // THE TASK
 
@@ -29,16 +29,19 @@ let contact = { email: "gevorg@gmail.com", phone: "+374 33 33 33", city: "Erevan
 // “Hi, my name is {firstName} {lastName}. I live in {city}.”
 // “I am {currentYear - birthYear} years old and currently {isStudent ? "a student" : "not a student"}.”
 
-
 // MY SOLUTION
 
-console.log(`Hi, my name is ${firstName} ${lastName}. I live in ${contact.city}`);
-console.log(`I am ${currentYear - birthYear} years old and currently ${isStudent ? "a student" : "not a student"}.`);
-
-
-
-
-
+console.log(
+  `Hi, my name is ${firstName} ${lastName}. I live in ${contact.city}, my hobbies are listed below`
+);
+for (let i = 0; i < hobbies.length; i++) {
+  console.log(i + 1, ") is ", hobbies[i]);
+}
+console.log(
+  `\nI am ${currentYear - birthYear} years old and currently ${
+    isStudent ? "a student" : "not a student"
+  }.\n`
+);
 
 // THE TASK
 
@@ -49,20 +52,15 @@ console.log(`I am ${currentYear - birthYear} years old and currently ${isStudent
 // Use both == and === to compare them and log the results
 // Log the data types of both variables.
 
-
 // MY SOLUTION
 
 let ageString = "25";
 
 let ageNumber = 25;
 
-console.log(ageNumber == ageString)
+console.log(ageNumber == ageString);
 
-console.log(ageNumber === ageString)
-
-
-
-
+console.log(ageNumber === ageString);
 
 // THE TASK
 
@@ -76,23 +74,22 @@ console.log(ageNumber === ageString)
 
 // MY SOLUTION
 
-const num = 74;   
+const num = 74;
 
-if (num >= 90) {      //simple if else cascade
-    console.log(num);
+if (num >= 90) {
+  //simple if else cascade
+  console.log(num);
 } else if (num >= 80) {
-    console.log(num);
+  console.log(num);
 } else if (num >= 70) {
-    console.log(num);
+  console.log(num);
 } else if (num >= 60) {
-    console.log(num);
+  console.log(num);
 } else if (num < 6) {
-    console.log(num);
+  console.log(num);
 }
 
-
-
-
+console.log();
 
 // THE TASK
 
@@ -103,37 +100,30 @@ if (num >= 90) {      //simple if else cascade
 // D → “Try harder.”
 // F → “Needs serious effort.”
 
-
 // Use a ternary operator to print:
 // “You passed.” if grade is C or above
 // Otherwise, “You failed.”
 
-
-
 // MY SOLUTION
 
-
-let grade = "A"
+let grade = "A";
 
 switch (grade) {
-    case "A":
-        console.log("Excellent work!");
-        break;
-    case "B":
-        console.log("Good job!");
-        break;
-    case "C":
-        console.log("Keep improving.");
-        break;
-    case "D":
-        console.log("Try harder.");
-        break;
-    case "F":
-        console.log("Needs serious effort.");
+  case "A":
+    console.log("Excellent work!");
+    break;
+  case "B":
+    console.log("Good job!");
+    break;
+  case "C":
+    console.log("Keep improving.");
+    break;
+  case "D":
+    console.log("Try harder.");
+    break;
+  case "F":
+    console.log("Needs serious effort.");
 }
-
-
-
 
 // AND THE LAST TASK
 
@@ -141,14 +131,8 @@ switch (grade) {
 // “You passed.” if grade is C or above
 // Otherwise, “You failed.”
 
-
 // AND MY SOLUTION
 
-(grade === "A" || grade === "B" || grade === "C") ? console.log("You passed.") : console.log("You failed.");
-
-
-
-
-
-
-
+grade === "A" || grade === "B" || grade === "C"
+  ? console.log("You passed.")
+  : console.log("You failed.");
